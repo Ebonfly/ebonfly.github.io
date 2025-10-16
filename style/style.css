@@ -28,6 +28,7 @@ p {
   text-shadow: 0px 0px 10px #7483fa99;
   font-weight: bold;
   font-family:"Space Mono", monospace;
+  font-size: 1.2rem;
   color: #7483fa;
 }
 
@@ -39,6 +40,11 @@ sub {
 }
 
 h3 sub {
+  font-size: 0.7rem;
+  vertical-align: baseline;
+}
+
+p sub {
   font-size: 0.7rem;
   vertical-align: baseline;
 }
