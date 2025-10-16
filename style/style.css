@@ -48,6 +48,7 @@ sup {
   font-weight: bold;
   font-family:"Space Mono", monospace;
   color: #7483fa;
+  opacity: 0.05;
 }
 
 h3 sup {
