@@ -133,3 +133,36 @@
 .socials img:hover {
   opacity: 1;
 }
+
+iframe {
+  opacity: 0.1;
+  scale: 0.02;
+  position: fixed;
+  top: 85vh;
+  transform-origin: bottom left;
+  transition: 0.3s;
+  transition-delay: 0s;
+}
+
+iframe:hover {
+  transition-delay: 0.1s;
+  opacity: 1;
+  scale: 1;
+}
+
+.nour {
+  position: fixed;
+  opacity: .1;
+  scale: .005;
+  top: -152.5vh;
+  right: .5vw;
+  transform-origin: bottom right;
+  transition: 0.3s;
+  transition-delay: 0s;
+  border-radius: 12px;
+}
+.nour:hover {
+  transition-delay: 0.1s;
+  opacity: 1;
+  scale: .1;
+}
