@@ -1,0 +1,135 @@
+/*.previews {
+  height: 50%;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  overflow: hidden;
+  z-index: -50;
+  opacity: 1;
+  animation: fade-in 1s cubic-bezier(0.37, 0, 0.63, 1) 4.5s 1 forwards;
+  mask: linear-gradient(to top, transparent 10%, #7483fa 15% 85%, transparent 90%);
+  backdrop-filter: brightness(300%) blur(30px);
+
+  display : flex;
+  flex-wrap: wrap;
+  align-items : center;
+}
+*/
+
+.pfp {
+  position: relative;
+  margin: auto;
+  width: 240px;
+  overflow: visible;
+}
+
+.pfp .backdrop-area {
+  opacity: 0;
+  animation: fade-in 1s cubic-bezier(0.37, 0, 0.63, 1) .5s 1 forwards;
+  position: absolute;
+  height: 100%;
+  backdrop-filter: brightness(200%) blur(15px);
+  z-index: inherit;
+  border-radius: 16px;
+  width: 200vw;
+
+  left: 50%;
+  right: 50%;
+  margin-left: -100vw;
+  margin-right: -100vw;
+  overflow: hidden;
+}
+
+.pfp .backdrop {
+  opacity: 0;
+  animation: fade-in 1s cubic-bezier(0.37, 0, 0.63, 1) .5s 1 forwards;
+  position: absolute;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  backdrop-filter: brightness(200%) blur(15px);
+  z-index: inherit;
+  margin-left: 0;
+  transition: 0.3s;
+  transition-delay: 0s !important;
+}
+
+.pfp:hover .backdrop{
+  transition-delay: 0.2s !important;
+  transition-delay: 0s;
+  border-radius: 16px;
+  margin-left: calc(-40vw + 120px);
+  width: 80vw;
+}
+
+.pfp .pfp-panel-text {
+  pointer-events: auto !important;
+  -webkit-user-select: none;     
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  text-align: center;
+  position: absolute;
+  opacity: 0;
+  width: 80vw;
+  height: fit-content;
+  margin: auto;
+  margin-left: calc(-40vw + 120px);
+  z-index: 100;
+  transition: 0.1s;
+  transition-delay: 0s;
+  font-size: auto;
+  font-size: clamp(0.7rem, 1vw, 1rem);
+}
+
+.pfp:hover .pfp-panel-text  {
+  transition: 0.3s;
+  transition-delay: 0.3s;
+  opacity:  1;
+}
+
+.pfp:hover .container img {
+  transition-delay: 0.2s !important;
+  scale: 0;
+  margin-left: calc(-40vw + 120px);
+}
+
+.pfp .container img {
+  opacity: 0;
+  animation: fade-in 1s cubic-bezier(0.37, 0, 0.63, 1) .5s 1 forwards;
+  pointer-events: none;
+  display: block;
+  margin-left: 0;
+  margin-right: 50%;
+  border-radius: 50%;
+  scale: 0.9;
+  white-space: nowrap;
+  transition: 0.3s;
+  transition-delay: 0s !important;
+}
+
+.socials {
+  -webkit-user-select: none;     
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  position: fixed;
+  top: .5vw;
+  height: 10%;
+  overflow: hidden;
+  z-index: 50;
+  white-space: nowrap;
+  font-size: 1.5vw;
+}
+.socials img {
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+.socials img:hover {
+  opacity: 1;
+}

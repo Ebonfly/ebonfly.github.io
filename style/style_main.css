@@ -1,0 +1,40 @@
+.main-header {
+  -webkit-user-select: none;     
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  padding-top: 30px;
+  width: 100%;
+  text-align: center;
+
+  opacity: 0;
+  animation: fade-in-pop 1s cubic-bezier(0.37, 0, 0.63, 1) forwards, ominous 5s linear infinite;
+  animation-delay: 1.5s, 2.5s;
+}
+
+.main-header h1 {
+  font-size: 75px;
+  font-size: 4vw;
+  white-space: nowrap;
+  margin: 0 auto; 
+}
+
+.about-me {
+  -webkit-user-select: none;     
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: auto;
+  width: 90%;
+  text-align: center;
+  line-height: 1.8;
+
+  opacity: 0;
+  font-size: clamp(0.5rem, 2vw, 1.5rem);
+  animation: fade-in 1s cubic-bezier(0.37, 0, 0.63, 1) forwards;
+  animation-delay: 2.5s;
+}

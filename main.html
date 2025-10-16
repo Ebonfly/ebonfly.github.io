@@ -5,10 +5,15 @@
         <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
         <script type="text/javascript" src="https://rawgit.com/patriciogonzalezvivo/glslCanvas/master/dist/GlslCanvas.js"></script>
-        <link rel="stylesheet" href="style.css">
+        
+        <link rel="stylesheet" href="style/animations.css">
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="style/style_background.css">
+        <link rel="stylesheet" href="style/style_main.css">
+        <link rel="stylesheet" href="style/style_panels.css">
     </head>
     <body>
-            <canvas class="glslCanvas background-shader"  data-textures="https://raw.githubusercontent.com/Ebonfly/TheOracle/refs/heads/master/Assets/Images/Noise/swirlyNoise.png"
+        <canvas class="glslCanvas background-shader"  data-textures="https://raw.githubusercontent.com/Ebonfly/TheOracle/refs/heads/master/Assets/Images/Noise/swirlyNoise.png"
             width="1920" height="1080"
               data-fragment="
             #ifdef GL_ES
@@ -47,15 +52,53 @@
 	            vec4 cloudFinal = pow(cloudy1+cloudy2, vec4(2.0));
 
                 gl_FragColor = mix(clamp(mix(mix(cloudCol2, cloudCol3, 0.5), cloudCol1*3.0, uv.y)*0.1 + cloudFinal, vec4(0.0), vec4(1.0)), gradientColor , pow(1.0-sin(uv.y*3.14)*sin(uv.x*3.14), 2.0)*0.5);
-            }
-            "></canvas>
+            }">
+        </canvas>
 
-        <div class="previews">
-            <!--<img src="https://github.com/Ebonfly/Ebonfly/blob/main/comet_s.webp?raw=true">-->
+        <br><br>
+
+        <div class="pfp">
+            <div class="backdrop-area"> </div>
+            <div class="backdrop"> </div>
+
+        <div class="pfp-panel-text">
+            <h1>Notable Stuff</h1>
+            <h3>Personal Projects: <a href="https://github.com/Ebonfly/TheOracle">The Oracle</a>, 
+                                <a href="https://www.youtube.com/watch?v=N0KLMbGZqkw">Violet Gleam <sub>(private for the time being)</sub></a>, 
+                                ...<a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3415023899">Ebonian Mod</a></h3>
+            <br>
+            <h3>Contributions: <a href="https://github.com/tModLoader/tModLoader/">tModLoader</a>,
+                <a href="https://discord.gg/GmUH8PuAHf">Mod of Redemption</a>, 
+                <a href="https://discord.gg/CbwGGHSCg2">NIGHTSHADE</a>, 
+                <a href="https://discord.gg/FFp7FwNBxu">Spooky Mod</a>,
+                and many mods that never released!</h3>
+        </div>
+
+        <div class="container">
+            <img src="pfp.png">
+        </div>
         </div>
         
         <div class="main-header">
-            <h1>Hi, I'm Ebonfly.</h1> 
+            <h1>Hi, I'm <a href="https://www.github.com/Ebonfly/">Ebonfly</a>.</h1> 
+            <sub>or Ebon
+            <br><br><br>I made this page because I was bored</sub>
         </div> 
+
+        <br>
+
+        <div class="about-me">
+            <h3>
+                Hobbyist C# programmer since 2019/2020, basically exclusively modding Terraria.
+                <br>
+                <br>Despite being what I'm newest to, I find myself most confident in VFX and shaders. 
+                <br><sub>(such as the one seen in the background here)</sub>
+            </h3>
+        </div>
+        <br>
+        <div class="socials">
+            <a href="https://discord.gg/DexM5QuV7c"><img align="right" alt="Discord" src="https://img.shields.io/discord/1069231084669243432?style=for-the-badge&label=discord&labelColor=1e1e2e&color=cba6f7"></a> 
+            <a href="https://www.youtube.com/@Ebonfly"><img align="right" alt="YouTube Channel Subscribers" src="https://img.shields.io/youtube/channel/subscribers/UC9Z_leOnTECruDGa4xldApg?style=for-the-badge&logoColor=cba6f7&label=YouTube&labelColor=1e1e2e&color=cba6f7"></a>
+        </div>
     </body>
 </html>

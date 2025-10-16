@@ -1,0 +1,41 @@
+/*sorry*/
+
+@keyframes fade-in-10 {
+  from { opacity: 0 }
+  to { opacity: 10% }
+}
+
+@keyframes fade-in {
+  from { opacity: 0 }
+  to { opacity: 100% }
+}
+
+@keyframes scroll {
+  0% {
+      transform: translate(0, 0);
+  }
+  100% {
+      transform: translate(-50%, 0);
+  }
+}
+
+@keyframes interactive {
+  from { 
+    pointer-events: none;
+}
+  to {
+    pointer-events: auto; ;
+  }
+}
+
+@keyframes fade-in-pop {
+  0% { opacity: 0 }
+  50% { opacity: 100% }
+  100% { opacity: 80% }
+}
+
+@keyframes ominous {
+  0% { opacity: 80% }
+  50% { opacity: 100% }
+  100% { opacity: 80% }
+}

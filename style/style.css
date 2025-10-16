@@ -1,0 +1,86 @@
+* {
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+} 
+*::-webkit-scrollbar { 
+    display: none; 
+}
+
+body {
+  background-color: black;
+  overflow-x: hidden;
+}
+
+h1 {
+  text-shadow: 0px 0px 20px #7483faaa;
+  font-family:"Space Mono", monospace;
+  color: #7483fa;
+}
+
+h3 {
+  text-shadow: 0px 0px 10px #7483fa99;
+  font-family:"Space Mono", monospace;
+  color: #7483fa;
+}
+
+p {
+  text-shadow: 0px 0px 10px #7483fa99;
+  font-weight: bold;
+  font-family:"Space Mono", monospace;
+  color: #7483fa;
+}
+
+sub {
+  text-shadow: 0px 0px 10px #7483fa99;
+  font-weight: bold;
+  font-family:"Space Mono", monospace;
+  color: #7483fa;
+}
+
+h3 sub {
+  font-size: 0.7rem;
+  vertical-align: baseline;
+}
+
+sup {
+  text-shadow: 0px 0px 10px #7483fa99;
+  font-weight: bold;
+  font-family:"Space Mono", monospace;
+  color: #7483fa;
+}
+
+h3 sup {
+  font-size: 0.7rem;
+  vertical-align: text-top;
+}
+
+strong{
+  text-shadow: 0px 0px 20px #a875fa !important;
+  color: #a875fa !important;  
+}
+
+a{
+  text-shadow: 0px 0px 20px #a875fa !important;
+  color: #a875fa !important;  
+  transition: text-shadow 0.3s;
+  pointer-events: none;
+  animation: interactive 1.5s forwards;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  text-shadow: 0px 0px 100px #a875fa !important;
+}
+
+a:active {
+  text-decoration: none;
+}
