@@ -9,4 +9,5 @@
   z-index: -100;
   opacity: 0%;
   animation: fade-in-10 1.5s forwards;
+  animation-delay: 0.3s;
 }
