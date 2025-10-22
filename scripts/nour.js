@@ -6,13 +6,13 @@ const body2 = document.getElementsByClassName("main-header")[0];
 const text = body2.getElementsByTagName("sub")[0];
 if (e.ctrlKey) {
     text.innerHTML = "^ My cat Nour ^";
-    img.src = "nnnou.jpg"
+    img.src = "images/nnnou.jpg"
     img.width=239;
     img.height=239;
     console.log("im doing a thing")
 }
 else{
-    img.src = "pfp.png"
+    img.src = "images/pfp.png"
     text.innerHTML = "^ art by <a href=\"https://www.tumblr.com/pinkwitchcult/787259597290340352/two-dollys\">pinkwitchcult</a> ^";
 }
 }
