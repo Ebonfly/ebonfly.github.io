@@ -17,18 +17,6 @@ else{
 }
 }
 
-function hide() {
-const body2 = document.getElementsByClassName("main-header")[0];
-const text = body2.getElementsByTagName("sub")[0];
-    text.style.visibility = "hidden";
-}
-
-function show() {
-const body2 = document.getElementsByClassName("main-header")[0];
-const text = body2.getElementsByTagName("sub")[0];
-    text.style.visibility = "visible";
-}
-
 document.addEventListener("keydown", nourify);
 document.addEventListener("keyup", nourify);
 document.addEventListener("click", nourify);

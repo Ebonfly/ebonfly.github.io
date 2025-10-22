@@ -61,6 +61,7 @@ sup {
   font-family:"Space Mono", monospace;
   color: #7483fa;
   opacity: 0.05;
+  font-size: 0.7rem;
 }
 
 h3 sup {
@@ -69,8 +70,7 @@ h3 sup {
 }
 
 strong{
-  text-shadow: 0px 0px 20px #a875fa !important;
-  color: #a875fa !important;  
+  font-size: 2rem;
 }
 
 a{

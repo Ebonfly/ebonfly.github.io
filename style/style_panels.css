@@ -17,16 +17,6 @@
   backdrop-filter: brightness(400%) blur(30px);
   z-index: inherit;
   margin-left: 0;
-  transition: 0.3s;
-  transition-delay: 0s !important;
-}
-
-.pfp:hover .backdrop{
-  transition-delay: 0.2s !important;
-  transition-delay: 0s;
-  border-radius: 16px;
-  margin-left: calc(-40vw + 120px);
-  width: 80vw;
 }
 
 .pfp .pfp-panel-text {
@@ -44,16 +34,8 @@
   margin: auto;
   margin-left: calc(-40vw + 120px);
   z-index: 100;
-  transition: 0.1s;
-  transition-delay: 0s;
   font-size: auto;
   font-size: clamp(0.7rem, 1vw, 1rem);
-}
-
-.pfp:hover .pfp-panel-text  {
-  transition: 0.3s;
-  transition-delay: 0.3s;
-  opacity:  1;
 }
 
 .pfp .container img {
@@ -69,14 +51,6 @@
   border-radius: 50%;
   scale: 0.9;
   white-space: nowrap;
-  transition: 0.3s;
-  transition-delay: 0s !important;
-}
-
-.pfp:hover .container img {
-  transition-delay: 0.2s !important;
-  scale: 0;
-  margin-left: calc(-40vw + 120px);
 }
 
 iframe {
